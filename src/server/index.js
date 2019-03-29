@@ -116,6 +116,6 @@ app.get("*", (req, res) => {
     </html>
   `)
 });
-app.listen(3000, () => {
+app.listen(process.env.PORT, process.env.IP, () => {
   console.log(`Server is listening on port: 3000`)
 })
